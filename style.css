@@ -1,14 +1,84 @@
-body{
-  margin: 0;
+*{
+  box-sizing: border-box;
 }
+html body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 
+}
+body{
+  padding: 0;
+  margin: 0;
+  display: block;
+
+}
 #principal{
-    background-image: url(img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;   
+  background-image: url(img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;   
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  height: 100%;
+  padding-top: 30px;
+  width: 100%;
+
 }
 h1{
-    margin: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: rgba(23, 131, 179, 39%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  
+}
+
+#kanban{
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ height: 100%;
+
+}
+#kanban .column{
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+#kanban .column .card{
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  border: solid 1px #0000001c;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 15px;
+  background-color: white;
+
+}
+#kanban .column .card:hover{
+  background-color: rgba(17, 117, 162, 53%);
+  cursor: pointer;
+}
+
+#kanban .column{
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 50%);
+
 }
